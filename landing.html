@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Grocery App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Grocery App</h1>
+        <img src="./image/Diwali.webp" >
+    </header>
+
+    <div class="hero">
+        <h1>Diwali Special Offers!</h1>
+    </div>
+
+    <div class="product-categories">
+        <div class="category" onclick="goToProductDetails()">
+            <h3>Fruits</h3>
+            <div>
+            <img src="./image/fruits.jpg" width="100px" height="100px">
+        </div>
+            <button>Shop Now</button>
+        </div>
+        
+        
+        <div class="category" onclick="goToProductDetails()">
+            <h3>Vegetables</h3>
+            <div>
+                <img src="./image/istockphoto.jpg" width="100px" height="100px">
+            </div>
+           
+            <button>Shop Now</button>
+       
+    </div>
+   
+        <div class="category" onclick="goToProductDetails()">
+            <h3>Snacks</h3>
+            <div>
+                <img src="./image/s_plate.jpg" width="100px" height="100px">
+            </div>
+           
+            <button>Shop Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Grocery App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goToProductDetails() {
+            window.location.href = 'product-details.html'; // Navigate to product details page
+        }
+    </script>
+</body>
+</html>

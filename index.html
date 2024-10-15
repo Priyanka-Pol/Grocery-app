@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Grocery App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+       
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Email/Username">
+        <input type="password" id="password" placeholder="Password">
+        <p><a href="#">Forgot Password?</a></p>
+        <button class="btn" id="login-btn">Login</button>
+        <div class="social-login">
+            <button>Login with Facebook</button>
+            <button style="background-color: #DB4437;">Login with Google</button>
+        </div>
+        <p class="sign-up">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+
+    <script>
+        // Handle login button click
+        document.getElementById('login-btn').addEventListener('click', function() {
+            // Normally you'd check credentials here, but we will simply navigate to the landing page
+            window.location.href = 'landing.html'; // Redirect to landing page after login
+        });
+    </script>
+</body>
+</html>

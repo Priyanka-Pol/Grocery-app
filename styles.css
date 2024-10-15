@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(246, 232, 196);
+    background-image: url(./image/happy-diwali-festival-banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2, h3, p {
+    margin: 0 0 10px;
+}
+
+header {
+    /* background-image: url(./image/Diwali.webp); */
+    background-color: #FF4500;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero {
+    height: 250px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.category {
+    background-image: url(./image/istockphoto.jpg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.category button {
+    background-color: #FF4500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #FF4500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #FF4500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-login button {
+    background-color: #1877F2; /* Facebook color */
+    color: white;
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-up {
+    margin-top: 15px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.product-image {
+    width: 300px;
+    height: 300px;
+    /* background-color: #f4f4f4; */
+    background-image: url(./image/fruits.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-info h2 {
+    color: #FF4500;
+}
+
+.price {
+    font-size: 24px;
+    color: #FF4500;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-section {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 100%;  /* Make sure the login container fits the mobile screen */
+        margin: 50px auto;
+    }
+
+    .product-categories {
+        flex-direction: column;  /* Stack product categories vertically */
+        align-items: center;
+    }
+
+    .category {
+        width: 90%;  /* Adjust category width for mobile screens */
+        margin-bottom: 20px;  /* Add space between categories */
+    }
+
+    .hero {
+        height: 200px;  /* Reduce hero section height on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;  /* Adjust font size */
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;  /* Reduce header padding */
+    }
+
+    footer {
+        font-size: 0.9rem;  /* Adjust footer text size for mobile */
+        padding: 10px;
+    }
+
+    .product-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .product-image {
+        width: 100%;  /* Make product image full width */
+        height: auto;  /* Maintain aspect ratio */
+    }
+
+    .add-to-cart {
+        width: 100%;  /* Make Add to Cart button take full width */
+    }
+
+    .details-section {
+        padding: 10px;
+        font-size: 0.9rem;  /* Reduce font size for product details */
+    }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .login-container {
+        margin-top: 30px;
+    }
+
+    h2, h3 {
+        font-size: 1.2rem;  /* Adjust heading sizes for small screens */
+    }
+
+    input {
+        font-size: 1rem;  /* Make form input text size larger for readability */
+    }
+
+    .btn {
+        font-size: 1rem;  /* Adjust button text size */
+        padding: 12px;  /* Slightly larger padding for better touch targets */
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;  /* Further reduce hero text size */
+    }
+
+    .category {
+        width: 95%;  /* Reduce category width for smaller mobile */
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .product-container {
+        padding: 5px;
+    }
+
+    .add-to-cart {
+        font-size: 1rem;  /* Increase button text size for mobile */
+    }
+}
